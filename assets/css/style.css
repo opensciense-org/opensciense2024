@@ -980,8 +980,14 @@ h2 {
 }
 
 #schedule .schedule-item {
-    border-bottom: 1px solid #cad4f6;
+    border-top: 1px solid #cad4f6;
     padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-color ease-in-out 0.3s;
+}
+
+#schedule .schedule-item-no-separator {
+    padding-top: 0px;
     padding-bottom: 15px;
     transition: background-color ease-in-out 0.3s;
 }
@@ -1011,7 +1017,8 @@ h2 {
     transition: all ease-in-out 0.3s;
 }
 
-#schedule .schedule-item h4 {
+#schedule .schedule-item h4,
+#schedule .schedule-item-no-separator h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
